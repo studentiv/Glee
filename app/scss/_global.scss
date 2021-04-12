@@ -28,3 +28,25 @@ body {
   color: $title;
   text-align: center;
 }
+
+.breadcrumbs {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(34, 41, 51, 0.6);
+    position: relative;
+  }
+
+  &__item + .breadcrumbs__item::before {
+    content: '/';
+    position: absolute;
+    left: -3px;
+  }
+}
