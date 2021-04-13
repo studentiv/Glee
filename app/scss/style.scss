@@ -9,7 +9,7 @@ a {
 }
 
 .header {
-  padding: 50px 15px;
+  padding: 50px 0;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -169,6 +169,7 @@ a {
     line-height: auto;
     @extend %dmsans-400;
     padding-left: 10px;
+    color: #234969;
   }
 
   &__form-btn {
@@ -844,6 +845,255 @@ a {
   }
 }
 
+.info {
+  padding: 110px 0 45px;
 
+  &__title {
+    font-size: 24px;
+    line-height: 40px;
+    @extend %rubik-500;
+    color: $accent;
+    margin-bottom: 15px;
+  }
+
+  & .info__list {
+    list-style-type: decimal-leading-zero;
+    margin-bottom: 70px;
+    padding-left: 30px;
+  }
+  
+  &__item {
+    margin-bottom: 25px;
+    color: $accent;
+    padding-left: 10px;
+  }
+
+  &__text {
+    color: $accent;
+    margin-bottom: 65px;
+  }
+
+}
+
+.about {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  &__bg {
+    margin-right: 45px;
+  }
+
+  &__sub-numb {
+    display: inline-block;
+    @extend %rubik-700;
+    font-size: 140px;
+    color: #a3bbc8;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    line-height: 1;
+  }
+
+  &__sub-text {
+    display: inline-block;
+    max-width: 100px;
+    transform: translateY(-5%);
+    color: $accent;
+  }
+
+  &__title {
+    line-height: 32px;
+    margin-bottom: 45px;
+    text-align: left;
+  }
+
+  &__text {
+    color: $accent;
+    margin-bottom: 60px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__item {
+    @extend %dmsans-700;
+    position: relative;
+    padding: 12px 30px 13px 60px;
+    border-right: 1px solid #e6eaf0;
+    margin-right: 30px;
+  }
+
+  &__item::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/about-icon1.svg);
+    width: 36px;
+    height: 38px;
+    left: 0;
+    top: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__item--second::before {
+    background-image: url(../images/icons/about-icon2.svg);
+    width: 43px;
+    height: 39px;
+  }
+
+  &__item--third {
+    border-right: none;
+  }
+
+  &__item--third::before {
+    background-image: url(../images/icons/about-icon3.svg);
+    width: 42px;
+    height: 40px;
+  }
+
+  &__item-title {
+    font-size: 36px;
+    line-height: 38px;
+    color: $accent;
+  }
+
+  &__item-text {
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+}
+
+.about-bottom {
+  background-color: #fcd7b6;
+  padding: 85px 0 80px;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    color: $accent;
+    @extend %dmsans-700;
+  }
+
+  &__item-title {
+    line-height: 32px;
+    padding: 20px 0;
+  }
+
+  &__item-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.sup-box {
+  width: 500px;
+  border-bottom: 2px solid #e6eaf0;
+  margin-bottom: 30px;
+}
+
+.team {
+  padding-bottom: 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 305px;
+    color: $accent;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    font-size: 15px;
+    line-height: 55px;
+    @extend %poppins-600;
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 18px 65px 18px 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  &__btn::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    background-image: url(../images/team-arrow.svg);
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2,370px);
+    grid-template-rows: repeat(2,320px);
+    grid-gap: 100px 30px;
+    margin-bottom: 70px;
+  }
+
+  &__box {
+    position: relative;
+  }
+  
+  &__item {
+    padding: 25px 0 25px 25px;
+    width: 325px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    position: absolute;
+    bottom: -60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__user-name {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  &__user-text {
+    line-height: 30px;
+    color: #565872;
+  }
+
+  &__social {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__social a + a {
+    margin-left: 8px;
+  }
+}
 
 @import 'media';

@@ -22,6 +22,12 @@ body {
   padding: 0 15px;
 }
 
+.sup-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
 .title {
   font-size: 36px;
   @extend %dmsans-700;
