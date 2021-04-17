@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="sup-container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo-img" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Home +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Services</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Pages +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">News</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img search" src="images/icons/search.svg" alt="icon">
+          </a>
+          <div class="user-nav__wrapper">
+            <a class="user-nav__link heart" href="#">
+              <img class="user-nav__link-img " src="images/icons/heart.png" alt="icon">
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link cart" href="#">
+              <img class="user-nav__link-img" src="images/icons/cart.svg" alt="icon">
+              <span class="user-nav__num">0</span>
+            </a>
+          </div>
+          <button class="user-nav__link dots" href="#">
+            <img class="user-nav__link-img" src="images/icons/menu.svg" alt="icon">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="top">
+      <div class="container">
+        <h2 class="top__title">Product list 1</h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Product list 1</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__filters filter">
+            <div class="filter-category filter__item">
+              <h3 class="filter__title">CATEGORY</h3>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <p class="filter-category__text">Chair</p>
+                </label>
+              </form>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <p class="filter-category__text">Table</p>
+                </label>
+              </form>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <p class="filter-category__text">Lamp</p>
+                </label>
+              </form>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <p class="filter-category__text">Watch</p>
+                </label>
+              </form>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <p class="filter-category__text">Clock</p>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter__item filter-price">
+              <h3 class="filter__title">Price</h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0.00" data-max="800.00" data-from="100.00"
+                  data-to="500.00">
+              </form>
+              <label class="filter-price__label">
+                <div class="filter-price__box">
+                  $<span class="filter-price__from"></span>.00
+                </div>
+                <div class="filter-price__box">
+                  $<span class="filter-price__to"></span>.00
+                </div>
+              </label>
+            </div>
+
+            <div class="filter-brand filter__item">
+              <h3 class="filter__title">Brand</h3>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <p class="filter-brand__text">RFL</p>
+                    <span class="filter-brand__numb">(10)</span>
+                  </div>
+                </label>
+              </form>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <p class="filter-brand__text">Brothers</p>
+                    <span class="filter-brand__numb">(21)</span>
+                  </div>
+                </label>
+              </form>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <p class="filter-brand__text">Regal</p>
+                    <span class="filter-brand__numb">(3)</span>
+                  </div>
+                </label>
+              </form>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <p class="filter-brand__text">Nadia</p>
+                    <span class="filter-brand__numb">(14)</span>
+                  </div>
+                </label>
+              </form>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <p class="filter-brand__text">Otobi</p>
+                    <span class="filter-brand__numb">(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-recent filter__item">
+              <h3 class="filter__title">RECENT PRODUCTS</h3>
+              <div class="filter-recent__item">
+                <div class="filter-recent__box">
+                  <a class="filter-recent__img-link" href="#">
+                    <img class="filter-recent__img" src="images/recent1.jpg" alt="product image">
+                  </a>
+                </div>
+                <div class="filter-recent__info">
+                  <h6 class="filter-recent__title">
+                    <a class="filter-recent__title-link" href="#">
+                      Pendant lamp
+                    </a>
+                  </h6>
+                  <div class="star" data-rateyo-rating="4" data-rateyo-star-width="11px" data-rateyo-spacing="8px">
+                  </div>
+                  <p class="filter-recent__price">23$</p>
+                </div>
+              </div>
+              <div class="filter-recent__item">
+                <div class="filter-recent__box">
+                  <a class="filter-recent__img-link" href="#">
+                    <img class="filter-recent__img" src="images/recent2.jpg" alt="product image">
+                  </a>
+                </div>
+                <div class="filter-recent__info">
+                  <h6 class="filter-recent__title">
+                    <a class="filter-recent__title-link" href="#">
+                      Pendant lamp
+                    </a>
+                  </h6>
+                  <div class="star" data-rateyo-rating="4" data-rateyo-star-width="11px" data-rateyo-spacing="8px">
+                  </div>
+                  <p class="filter-recent__price">23$</p>
+                </div>
+              </div>
+              <div class="filter-recent__item">
+                <div class="filter-recent__box">
+                  <a class="filter-recent__img-link" href="#">
+                    <img class="filter-recent__img" src="images/recent3.jpg" alt="product image">
+                  </a>
+                </div>
+                <div class="filter-recent__info">
+                  <h6 class="filter-recent__title">
+                    <a class="filter-recent__title-link" href="#">
+                      Pendant lamp
+                    </a>
+                  </h6>
+                  <div class="star" data-rateyo-rating="4" data-rateyo-star-width="11px" data-rateyo-spacing="8px">
+                  </div>
+                  <p class="filter-recent__price">23$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop-content">
+            <div class="shop-content__inner">
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/1.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/1.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/2.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/2.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden chair</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/3.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/3.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Pendant lamp</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/4.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/5.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/6.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/7.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/8.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/4.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/4.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/4.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-content__item">
+                <div class="shop-content__img-box">
+                  <img class="products-top__item-img" src="images/products/4.jpg" alt="products image">
+                  <img class="products-top__item-img--list" src="images/product-list/4.jpg" alt="">
+                </div>
+                <div class="shop-content__box">
+                  <h6 class="products-top__item-title">Wooden radio</h6>
+                  <div class="star list-mode" data-rateyo-rating="4" data-rateyo-star-width="18px"
+                    data-rateyo-spacing="13px"></div>
+                  <p class="products-top__item-price">$29.00</p>
+                  <p class="shop-content__box-text list-mode">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <button class="shop-content__box-btn list-mode">Add to cart</button>
+                </div>
+                <div class="products-top__item--hover">
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="cart-icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="products-top__item-link--hover" href="#">
+                    <svg class="heart-icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              </ul>
+              <a class="pagination__next" href="#">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="partners">
+      <div class="container">
+        <div class="partners__inner">
+          <img class="partners-img" src="images/partners/1.png" alt="partners">
+          <img class="partners-img" src="images/partners/2.png" alt="partners">
+          <img class="partners-img" src="images/partners/3.png" alt="partners">
+          <img class="partners-img" src="images/partners/4.png" alt="partners">
+          <img class="partners-img" src="images/partners/5.png" alt="partners">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item">
+          <a class="logo" href="#">
+            <img class="logo-img" src="images/logo.png" alt="logo">
+          </a>
+          <a class="footer-top__address" href="#">
+            ADDRESS: 4772 Wines Lane
+            Houston, TX 77032
+          </a>
+          <a class="footer-top__phone" href="tel:+8323475843">
+            Telephone: +832-347-5843
+          </a>
+          <a class="footer-top__email" href="mailto:contact@Glee.com">
+            Email: contact@Glee.com
+          </a>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Services
+          </h6>
+          <ul class="ul footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">About us</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Return Policy</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Our Blog</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Contact Us</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Your Account</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Checkout</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Login</a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            newsletter
+          </h6>
+          <p class="footer-top__text">
+            Subscribe by our newsletter and get
+            update protidin.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+        <div class="footer-bottom_nav">
+          <a class="footer-bottom__nav-link" href="#">Home</a>
+          <a class="footer-bottom__nav-link" href="#">About</a>
+          <a class="footer-bottom__nav-link" href="#">Blog</a>
+          <a class="footer-bottom__nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

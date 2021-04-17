@@ -47,8 +47,6 @@ $title: #191919;
   font-weight: 700;
 }
 
-
-
 %btn {
   background-color: #a3bbc8;
   color: #fff;
@@ -56,6 +54,14 @@ $title: #191919;
   font-size: 15px;
   line-height: 12px;
   padding: 23px 100px 19px 25px;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 @function max($numbers...) {
