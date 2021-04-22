@@ -56,6 +56,17 @@ $title: #191919;
   padding: 23px 100px 19px 25px;
 }
 
+%btn-default {
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 12px;
+  color: $default;
+  padding: 20px 85px 22px 20px;
+  border: 1px solid hsl(150, 3%, 71%);
+  border-radius: 5px;
+  display: inline-block;
+}
+
 %checkbox-hidden {
   width: 1px;
   height: 1px;
@@ -70,3 +81,4 @@ $title: #191919;
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
+

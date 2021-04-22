@@ -50,6 +50,21 @@ body {
   height: 20px;
 }
 
+.calendar-icon svg {
+  width: 13px;
+  height: 13px;
+}
+
+.author-icon svg {
+  width: 12px;
+  height: 13px;
+}
+
+.arrow-icon svg {
+  width: 22px;
+  height: 9px;
+}
+
 .breadcrumbs {
 
   &__list {
@@ -75,7 +90,6 @@ body {
 .pagination {
   display: flex;
   justify-content: center;
-  padding-top: 70px;
   color: $accent;
   line-height: 30px;
   &__list {
