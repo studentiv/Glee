@@ -127,3 +127,22 @@ body {
   justify-content: flex-start;
   padding-top: 20px;
 }
+
+.post-info{
+  position: absolute;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 20px 25px 20px 20px;
+  background-color: #a3bbc8;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  a{
+    & span{
+      margin-right: 5px;
+    }
+  }
+  &__date{
+    margin-right: 20px;
+  }
+}
