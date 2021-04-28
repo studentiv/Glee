@@ -86,6 +86,8 @@ $(function () {
   
   var mixer1 = mixitup(containerEl1, config);
   var mixer2 = mixitup(containerEl2, config);
+
+  
   
   // var mixer = mixitup('.products-top__items')
   // var mixer = mixitup('.design-top__items')

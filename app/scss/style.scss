@@ -2026,4 +2026,112 @@ a {
     cursor: pointer;
   }
 }
+
+.contact{
+  padding: 120px 0;
+  &__sub-title{
+    line-height: 20px;
+    @extend %poppins-700;
+    color: #a3bbc8;
+    text-align: center;
+    display: block;
+  }
+  &__title{
+    text-align: center;
+    font-size: 35px;
+    line-height: 57px;
+    @extend %dmsans-700;
+    margin-bottom: 70px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbfbfb;
+    border: 2px solid transparent;
+    text-align: center;
+    justify-content: center;
+    width: 370px;
+    height: 380px;
+    transition: all .3s;
+    &:hover{
+      border-color: #a3bbc8;
+      & .contact__item-img{
+        background-color: #a3bbc8;
+        transition: all .3s;
+      }
+      & .contact__item-icon{
+        transition: all .3s;
+        fill: #fff;
+      }
+    }
+  }
+  &__item-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    margin: 60px 0 20px;
+  }
+  &__item-text{
+    color: #565872;
+    max-width: 270px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form{
+    max-width: 620px;
+  }
+  &__form-box{
+    margin-bottom: 25px;
+  }
+  &__form-input{
+    border: none;
+    background-color: #fafafa;
+  }
+  &__form-input::placeholder{
+    color: rgba(86, 88, 114, 0.8);
+    text-transform: uppercase;
+  }
+  &__form-input + .contact__form-input{
+    margin-left: 20px;
+  }
+  &__form-textarea{
+    border: none;
+    background-color: #fafafa;
+    height: 175px;
+    margin-bottom: 30px;
+  }
+  &__form-textarea::placeholder{
+    color: rgba(86, 88, 114, 0.8);
+    text-transform: uppercase; 
+  }
+  &__form-btn{
+    border-radius: 5px;
+  }
+}
+
+#map{
+  width: 500px;
+  height: 335px;
+}
 @import 'media';
