@@ -12,6 +12,10 @@ body {
   flex-direction: column;
 }
 
+a {
+  color: inherit;
+}
+
 .main {
   flex-grow: 1;
 }
