@@ -9,8 +9,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 37px;
-  
-
+  flex-wrap: wrap;
+  &__item{
+    margin-right: 10px;
+  }
   &__item a {
     display: block;
     font-size: 14px;
@@ -43,6 +45,7 @@
     color: #1f2044;
     padding: 16px 0 20px;
     text-transform: uppercase;
+    pointer-events: none;
   }
   
   &__text {
@@ -51,7 +54,7 @@
   }
 
   &__form {
-    background-color: #fef7f0;
+    // background-color: #fef7f0;
   }
 
   &__form-input {
@@ -78,6 +81,7 @@
     color: #fff;
     padding: 9px 20px 8px 15px;
     cursor: pointer;
+    margin-left: -4px;
   }
 }
 .footer-bottom {
@@ -97,3 +101,52 @@
   }
 }
 
+@media (max-width: 1050px){
+  .footer-top{
+    
+  }
+}
+@media (max-width: 700px){
+  .footer-bottom{
+    flex-wrap: wrap;
+    justify-content: center;
+    &__copy {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 600px){
+  .footer-top{
+    &__item:nth-child(1){
+      width: 100%;
+    }
+    &__address{
+      max-width: 100% !important;
+    }
+    &__text{
+      max-width: 100%;
+    }
+    &__item{
+      width: 100%;
+    }
+    &__title{
+      pointer-events: auto;
+    }
+    &__list{
+      display: none;
+    }
+  }
+}
+@media (max-width: 360px){
+  .footer-top{
+    &__form-input{
+      max-width: 100%;
+    }
+    &__form-btn{
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}

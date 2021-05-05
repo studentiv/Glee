@@ -4,13 +4,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 .menu {
+  &__btn{
+    display: none;
+  }
   ul.menu__list {
     display: flex;
-    margin-left: 150px;
+    // margin-left: 150px;
   }
 
   &__list-item + .menu__list-item {
@@ -88,3 +92,119 @@
   border-radius: 50%;
   background-color: #a3bbc8;
 }
+
+@media (max-width: 1200px){
+  .header{
+    &__inner{
+
+    }
+  }
+}
+@media (max-width: 1050px){
+  .menu{
+      order: 1;
+      margin-left: 40px;
+    &__list{ 
+      transform: translateY(-300%);
+      position: absolute;
+      top: 120px;
+      width: 100%;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      transition: all .3s;
+      background-color: #fff; 
+      &.menu__list--active{
+        transform: translateY(0);
+        transition: all .3s;
+      }
+    }
+    &__list-item{
+      width: 100%;
+      padding: 0 15px;
+      text-align: center;
+    }
+    &__list-item + .menu__list-item {
+      padding-left: 15px;
+    }
+    &__list-link{
+      display: block;
+      padding: 12px 0;
+      line-height: 20px;
+    }
+    &__btn{
+      width: 30px;
+      height: 22px;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 0;
+      span{
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+      }
+      &::after,
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+      }
+      &::before{
+        top: 0;
+      }
+      &::after{
+        bottom: 0;
+      }
+    }
+  }
+  .user-nav{
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px){
+  .menu{
+    order: 0;
+    &__list{
+      top: 200px;
+    }
+  }
+  .user-nav{
+    width: 100%;
+    margin-top: 25px;
+    justify-content: flex-end;
+    &__wrapper{
+      margin: 0 15px;
+    }
+  }
+}
+
+@media (max-width: 360px){
+  .menu{
+    &__list{
+      top: 250px;
+    }
+  }
+  .user-nav{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__wrapper{
+      order: 1;
+      margin: 20px auto 0 auto;
+    }
+    button{
+      width: 50px;
+      height: 50px;
+      margin-left: 51px;
+    }
+  }
+}
+
